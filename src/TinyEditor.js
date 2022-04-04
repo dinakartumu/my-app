@@ -11,7 +11,10 @@ export default function App() {
   return (
     <>
       <Editor
-        apiKey="bptkqle7qrf1cwjvfdu7u8lte0rv2jn9wjaxzm43zru6083z"
+        // tinymceScriptSrc="/tinymce/js/tinymce.min.js"
+        tinymceScriptSrc={
+          'https://my-app-omega-one.vercel.app/public/tinymce/js/tinymce.min.js'
+        }
         onInit={(evt, editor) => (editorRef.current = editor)}
         initialValue="<p>This is the initial content of the editor.</p>"
         init={{
