@@ -11,11 +11,9 @@ export default function App() {
   return (
     <>
       <Editor
-        // tinymceScriptSrc="/tinymce/js/tinymce.min.js"
-        tinymceScriptSrc={
-          'https://my-app-omega-one.vercel.app/public/tinymce/js/tinymce.min.js'
-        }
+        // apiKey="bptkqle7qrf1cwjvfdu7u8lte0rv2jn9wjaxzm43zru6083z"
         onInit={(evt, editor) => (editorRef.current = editor)}
+        tinymceScriptSrc="https://my-app-dinakar91.vercel.app/tinymce/js/tinymce/tinymce.min.js"
         initialValue="<p>This is the initial content of the editor.</p>"
         init={{
           height: 500,
@@ -26,10 +24,9 @@ export default function App() {
             'insertdatetime media table paste code help wordcount',
           ],
           toolbar:
-            'undo redo | formatselect | ' +
+            'formatselect | ' +
             'bold italic backcolor | alignleft aligncenter ' +
-            'alignright alignjustify | bullist numlist outdent indent | ' +
-            'removeformat | help',
+            'alignright alignjustify | bullist numlist | link image | ',
           content_style:
             'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
         }}
